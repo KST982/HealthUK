@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo'); /* Arvo Google Font */
+
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'); /* Bootstrap CSS */
+
+body {
+	background-color: #06b3c8;
+	margin: 0;
+	padding: 0;
+	font-family: Arvo;
+}
+
+h1 {
+	text-align:center;
+	padding-top: 20px;
+	font-size: 30px;
+	color: white;
+}
+
+h2 {
+	text-align:center;
+	font-size: 18px;
+	color: white;
+	padding: 10;
+}
+
+h3 {
+	text-align:center;
+	font-size: 16px;
+	color: white;
+	padding: 10;
+}
+h4 {
+		text-align:center;
+		font-size: 14px;
+		color: white;
+		padding: 10;
+}
+.footer_boi {
+	position: sticky;
+	left: 0;
+	bottom:0;
+	width: 100%;
+	height: 6%;
+	background-color: #a2a2a3;
+	color: white;
+	text-align: center;
+}
+
+.logo
+{
+	padding: 20;
+	height: 200px;
+	width: 240px;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.MenuBar {
+	list-style-type: none;
+	position: absolute;
+	position: sticky;
+	margin: 0;
+	padding: -1;
+	display: table;
+	margin: 0 auto;
+}
+
+
+li {
+	display: inline-block;
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	background-color: #e85721;
+}
+
+li a:hover {
+    background-color: #f78b63;
+}
+
+
+.active {
+    background-color: #4CAF50;
+}
+
+.Hyperlink {
+	padding: 5px;
+}
+
+.Form {
+	text-align:center;
+}
+
+.video {
+	padding: 20px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+input[type=text], select, textarea {
+  width: 35%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=email], select, textarea {
+  width: 35%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
+/* Styling for the submit & reset buttons */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=reset] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Styles for regular buttons across the website */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+input[type=reset]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}

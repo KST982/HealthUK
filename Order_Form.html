@@ -1,0 +1,73 @@
+<!DOCTYPE>
+
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  <!--- Bootstrap CSS -->
+	<link rel="stylesheet" href="stylesheet.css"> <!--- My Stylesheet -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!--- jQuery JS --->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> <!--- Bootstrap JS --->
+	<script src="script.js"></script> <!--- My JavaScript File --->
+
+	<a name="top"></a>
+
+</head>
+
+<body>
+
+
+
+<p>
+	<a href="index.html">
+	<img class = "logo" src= "Health-UK-Logo.png">
+	</a>
+</p>
+
+<header>
+	<ul class = "MenuBar">
+		<li><a href = "index.html">Home</a></li>
+		<li><a href = "About_Product.html">About the Product</a></li>
+		<li><a href = "ProdSpec.html">Product Specification</a></li>
+		<li><a class = "active" href = "Order_Form.html"> Pre - Order Form</a></li>
+		<li><a href = "About_Us.html">About Us</a></li>
+	</ul>
+</header>
+
+<form method = "post" action="orderconfirm.html" class = "Form"><br>
+	<fieldset>
+    <legend>Pre - Order information:</legend>
+		First name:<br>
+	  <input type="text" name="firstname" required = "Please fill out your firstname!"><br>
+	  Last name:<br>
+	  <input type="text" name="lastname" required><br>
+		Email Address:<br>
+	  <input type="email" name="email" required><br>
+		Contact Number (UK 07 Prefix):<br>
+	  <input type="text" name="phone" minlength="11" maxlength="11" size="11" required><br>
+		Product Choice:<br>
+		<select>
+  			<option value="version1">HealthUK Bio-metric Scanner (without insulin injector)</option>
+  			<option value="version2">HealthUK Bio-metric Scanner (with insulin injector)</option>
+  			<option value="version3">HealthUK Bio-metric Scanner x2 (without insulin injector)</option>
+  			<option value="version4">HealthUK Bio-metric Scanner x2 (with insulin injector)</option>
+		</select><br>
+		Payment Method:<br>
+		<select>
+				<option value="payment1">Visa</option>
+				<option value="payment2">Mastercard</option>
+				<option value="payment3">Paypal</option>
+				<option value="payment4">Cryptocurrency</option>
+		</select><br><br>
+		<input type="reset" value="Reset"><br> <br>
+		<input type="submit" value="Submit"><br>
+	</fieldset>
+</form>
+
+<p class = "Hyperlink" >
+	<a href = "#top">Back to top!</a>
+</p>
+
+
+<div class = "footer_boi">
+	<p> Created by Kamalpreet Tamber </p>
+</div>
+
+</body>
