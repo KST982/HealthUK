@@ -1,163 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Arvo'); /* Arvo Google Font */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300i|Roboto:300'); /* Roboto and OpenSans Google Font */
 
 @import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'); /* Bootstrap CSS */
-
-/*
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-
-  //CSS
-
-}
-
-/*
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) {
-
-	body {
-		background-color: #06b3c8;
-		margin: 0;
-		padding: 0;
-		font-family: Arvo;
-	}
-
-	h1 {
-		text-align:center;
-		padding-top: 20px;
-		font-size: 30px;
-		color: white;
-	}
-
-	h2 {
-		text-align:center;
-		font-size: 18px;
-		color: white;
-		padding: 10;
-	}
-
-	h3 {
-		text-align:center;
-		font-size: 16px;
-		color: white;
-		padding: 10;
-	}
-	h4 {
-			text-align:center;
-			font-size: 14px;
-			color: white;
-			padding: 10;
-	}
-
-}
-
-/*
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-
-	body {
-		background-color: #06b3c8;
-		margin: 0;
-		padding: 0;
-		font-family: Arvo;
-	}
-
-	h1 {
-		text-align:center;
-		padding-top: 20px;
-		font-size: 30px;
-		color: white;
-	}
-
-	h2 {
-		text-align:center;
-		font-size: 18px;
-		color: white;
-		padding: 10;
-	}
-
-	h3 {
-		text-align:center;
-		font-size: 16px;
-		color: white;
-		padding: 10;
-	}
-	h4 {
-			text-align:center;
-			font-size: 14px;
-			color: white;
-			padding: 10;
-	}
-
-}
-
-/*
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
-
-@media (min-width: 481px) and (max-width: 767px) {
-
-  //CSS
-
-}
-
-/*
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
-
-@media (min-width: 320px) and (max-width: 480px) {
-
-	body {
-		background-color: #06b3c8;
-		margin: 0;
-		padding: 0;
-		font-family: Arvo;
-	}
-
-	h1 {
-		text-align:center;
-		padding-top: 20px;
-		font-size: 30px;
-		color: white;
-	}
-
-	h2 {
-		text-align:center;
-		font-size: 18px;
-		color: white;
-		padding: 10;
-	}
-
-	h3 {
-		text-align:center;
-		font-size: 16px;
-		color: white;
-		padding: 10;
-	}
-	h4 {
-			text-align:center;
-			font-size: 14px;
-			color: white;
-			padding: 10;
-	}
-
-}
 
 body {
 	background-color: #06b3c8;
 	margin: 0;
 	padding: 0;
-	font-family: Arvo;
+	font-family: 'Open Sans';
 }
 
 h1 {
@@ -165,13 +14,15 @@ h1 {
 	padding-top: 20px;
 	font-size: 30px;
 	color: white;
+  font-family: 'Roboto';
 }
 
 h2 {
 	text-align:center;
 	font-size: 18px;
 	color: white;
-	padding: 10;
+	padding: 5;
+  font-family: 'Roboto', sans-serif;
 }
 
 h3 {
@@ -179,33 +30,46 @@ h3 {
 	font-size: 16px;
 	color: white;
 	padding: 10;
+  font-family: 'Roboto', sans-serif;
 }
+
 h4 {
-		text-align:center;
-		font-size: 14px;
-		color: white;
-		padding: 10;
+	text-align:center;
+	font-size: 14px;
+	color: white;
+	padding: 10;
+  font-family: 'Roboto', sans-serif;
 }
+
 .footer_boi {
 	position: sticky;
 	left: 0;
 	bottom:0;
 	width: 100%;
 	height: 6%;
-	background-color: #a2a2a3;
+	background-color: #e85721;
 	color: white;
+  padding: 6px;
 	text-align: center;
 }
 
-.logo
-{
+.logo {
 	padding: 20;
 	height: 200px;
 	width: 240px;
 	display: block;
   margin-left: auto;
   margin-right: auto;
+}
 
+.smartDotPicture
+{
+  padding: 20;
+  height: 200px;
+  width: 500px;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .MenuBar {
@@ -216,6 +80,10 @@ h4 {
 	padding: -1;
 	display: table;
 	margin: 0 auto;
+}
+
+.bttButton {
+    text-align: center;
 }
 
 
@@ -250,13 +118,6 @@ li a:hover {
 	text-align:center;
 }
 
-.video {
-	padding: 20px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
 input[type=text], select, textarea {
   width: 35%; /* Full width */
   padding: 12px; /* Some padding */
@@ -288,29 +149,17 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  text-align: center;
 }
 
 input[type=reset] {
   background-color: #4CAF50;
   color: white;
   padding: 12px 25px;
-  border: none;
+  border: 5px;
   border-radius: 4px;
   cursor: pointer;
 }
-
-/* Styles for regular buttons across the website */
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-
-
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
@@ -326,4 +175,50 @@ input[type=reset]:hover {
   border-radius: 10px;
   background-color: #f2f2f2;
   padding: 20px;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #4CAF50;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.collapsible:hover, .collapsible:active{
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active, .collapsible:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.main_text {
+  border: 1px solid orange;
+  padding: 10px;
+  margin: 30px;
+  color: white;
+  font-size: 20px;
 }

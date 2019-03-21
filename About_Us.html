@@ -4,7 +4,6 @@
 <link rel="stylesheet" href="stylesheet.css"> <!--- My Stylesheet -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!--- jQuery JS --->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> <!--- Bootstrap JS --->
-
 <a name="top"></a>
 
 </head>
@@ -33,7 +32,7 @@
 
 <h4> Health UK thrives on community feedback, which is why we'd love for you to <a href="mailto:contact@healthuk.com"> get in touch</a> with us! or, you can enter your details below and we'll contact you as soon as possible! </h4>
 
-	<form method = "post" action="https://kst982.github.io/HealthUK/orderconfirm.html" class = "Form"><br>
+	<form action="contactconfirm.html" class = "Form"><br>
 		<fieldset>
 	    <legend>Contact Us:</legend>
 			First name:<br>
@@ -49,9 +48,43 @@
 		</fieldset>
 	</form>
 
-	<p class = "Hyperlink" >
-		<a href = "#top">Back to top!</a>
-	</p>
+	<button class="collapsible">Section 1</button>
+	<div class="panel">
+	  <p>Lorem ipsum...jaklsdkjlasjdlkaks;ldkalsjdlajskdaksjdlkaksldjasd</p>
+	</div>
+
+	<button class="collapsible">Section 2</button>
+	<div class="panel">
+	  <p>Lorem ipsum...</p>
+	</div>
+
+	<button class="collapsible">Section 3</button>
+	<div class="panel">
+	  <p>Lorem ipsum...</p>
+	</div>
+
+	<script>
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+	  coll[i].addEventListener("click", function() {
+	    this.classList.toggle("active");
+	    var content = this.nextElementSibling;
+	    if (content.style.maxHeight){
+	      content.style.maxHeight = null;
+	    } else {
+	      content.style.maxHeight = content.scrollHeight + "px";
+	    }
+	  });
+	}
+	</script>
+
+	<div class = "bttButton" >
+		<form action="About_Us.html#top" style="padding:5">
+		<input type="submit" value="Back to the top!">
+		</form>
+	</div>
 
 	<div class = "footer_boi">
 		<p> Created by Kamalpreet Tamber </p>
