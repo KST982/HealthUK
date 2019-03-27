@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300i|Roboto:300'); /* Roboto and OpenSans Google Font */
+	@import url('https://fonts.googleapis.com/css?family=Open+Sans:300i|Roboto:300'); /* Roboto and OpenSans Google Font */
 
 @import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'); /* Bootstrap CSS */
 
@@ -130,6 +130,17 @@ input[type=text], select, textarea {
 }
 
 input[type=email], select, textarea {
+  width: 35%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=tel], select, textarea {
   width: 35%; /* Full width */
   padding: 12px; /* Some padding */
   border: 1px solid #ccc; /* Gray border */

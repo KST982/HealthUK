@@ -8,6 +8,8 @@
 
 </head>
 
+<body style="margin:10; padding:10">
+
 <p>
 	<a href="index.html">
 	<img class = "logo" src= "Health-UK-Logo.png">
@@ -48,43 +50,84 @@
 		</fieldset>
 	</form>
 
-	<button class="collapsible">Section 1</button>
+		<div class = "bttButton" >
+			<form action="About_Us.html#top" style="padding:5">
+			<input type="submit" value="Back to the top!">
+			</form>
+		</div>
+
+	<button class="accordion">Privacy Policy</button>
 	<div class="panel">
-	  <p>Lorem ipsum...jaklsdkjlasjdlkaks;ldkalsjdlajskdaksjdlkaksldjasd</p>
+	  <p>I. Information we collect and use
+
+a. Registration
+
+In order to use some of our Services, you will first complete the registration process. During registration you are required to provide personal information (such as, but not limited to, name, third party account passwords, phone numbers, email addresses, and contacts). We use this information to offer Service and to contact you about the Services and other services offered by VitalConnect for which you have expressed interest or that you might be interested in.
+Certain VitalConnect services store, process and maintain your voicemail messages, recorded voice notes, contact lists and other data related to your account in order to provide the service to you.
+When you use the Service, the Service’s servers automatically record certain information about your use of the Service. Similar to other web services, the Service records information such as account activity (including storage usage, number of log-ins), data displayed or clicked on (including UI elements, ads, links), other log information (including browser type, IP-address, date and time of access, cookie ID, and referrer URL) and telephony log information (including calling-party number, forwarding numbers, time and date of calls, duration of calls, and types of calls). This information is collected to provide our users with secure communication and to collect statistics to improve service.
+b. Cookies
+
+A cookie is a small text file stored on the user’s computer tied to information about the user. These files identify your computer and record your preferences and other data about your visit to a website so that when you return to that site, the site operator knows who you are and can personalize and enhance your visit. Usage of a cookie is not linked to any personally identifiable information while on the Web Sites except if you choose to store your user name and password so that you do not have to enter it each time you access your account.
+
+The use of cookies by our partners and/or tracking utility company on some of our sites is not covered by our privacy statement. We do not have access or control over these cookies. Our partners and/or tracking utility company may use session ID cookies to make it easier for you to navigate our site or other user related services.
+
+c. Log Files
+
+Like most websites, our servers automatically record information given by browsers and the phone systems, such as Caller ID and IP addresses. These log files are not linked to personally identifiable information.
+
+d. Clear Gifs
+
+Clear gifs are tiny graphics with a unique identifier, similar in function to cookies, and we may use them, on some of our Web Sites, to track the online movements of our users. Clear gifs are invisible on the page and are much smaller than cookies, about the size of the period at the end of this sentence. Clear gifs are not tied to users’ personally identifiable information. We may also use clear gifs in our HTML-based emails to let us know which emails have been opened by the recipients. This allows us to gauge the effectiveness of certain communications and the effectiveness of our marketing campaigns. If users would like to opt-out of receiving these emails, please email us at privacy@vitalconnect.com.
+
+e. Affiliated Sites</p>
 	</div>
 
-	<button class="collapsible">Section 2</button>
-	<div class="panel">
-	  <p>Lorem ipsum...</p>
-	</div>
+<style>
+	.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
 
-	<button class="collapsible">Section 3</button>
-	<div class="panel">
-	  <p>Lorem ipsum...</p>
-	</div>
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.accordion:active, .accordion:hover {
+  background-color: #ccc;
+}
 
-	<script>
-	var coll = document.getElementsByClassName("collapsible");
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+
+  padding: 0 15px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+</style>
+
+<script>
+	var acc = document.getElementsByClassName("accordion");
 	var i;
 
-	for (i = 0; i < coll.length; i++) {
-	  coll[i].addEventListener("click", function() {
+	for (i = 0; i < acc.length; i++) {
+	  acc[i].addEventListener("click", function() {
 	    this.classList.toggle("active");
-	    var content = this.nextElementSibling;
-	    if (content.style.maxHeight){
-	      content.style.maxHeight = null;
+	    var panel = this.nextElementSibling;
+	    if (panel.style.maxHeight){
+	      panel.style.maxHeight = null;
 	    } else {
-	      content.style.maxHeight = content.scrollHeight + "px";
+	      panel.style.maxHeight = panel.scrollHeight + "px";
 	    }
 	  });
 	}
-	</script>
+</script>
 
-	<div class = "bttButton" >
-		<form action="About_Us.html#top" style="padding:5">
-		<input type="submit" value="Back to the top!">
-		</form>
-	</div>
 
 	<div class = "footer_boi">
 		<p> Created by Kamalpreet Tamber </p>
